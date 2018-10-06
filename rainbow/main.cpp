@@ -54,7 +54,7 @@ void table_gen(const char * filepath)
 	{
 		for (int j = 0; j < pssize-1; j++)
 		{
-			p0[5] = '0';
+			p0[5] = '0'+rand() % 10;
 			p0[j] = i/ (int)pow(10,j) % 10+'0';
 		}
 
