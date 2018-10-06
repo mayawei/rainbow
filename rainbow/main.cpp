@@ -12,7 +12,7 @@
 //unsigned char PASSCHAR[] = "0123456789abcdefghijklmnopqrstuvwxyz_@!$ABCDEFGHIJKLMNOPQRSTUVWXYZ~#%^&*()+[]\\{}|;':\",./<>?";
 unsigned char PASSCHAR[] = "0123456789";
 int len = 10;
-int length = 10;
+int length = 9;
 unsigned char result[pssize] = { 0 };
 unsigned char heads[num][pssize + 1];
 unsigned char tails[num][pssize + 1];
@@ -152,8 +152,8 @@ int atk(const unsigned char * hash)
 int main()
 {
 	int i = 0;
-	table_gen("D:\\rainbow.txt");
-	table_load("D:\\rainbow.txt");
+	//table_gen("rainbow.txt");
+	table_load("rainbow.txt");
 	unsigned char test[pssize + 1] = "000000";
 	test[pssize] = 0;
 	unsigned char hash0[17];
